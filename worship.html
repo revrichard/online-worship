@@ -177,11 +177,32 @@ So it is to be. Amen.</p>
 
 <section data-background-color="#A9F5F2" data-transition="none">
         
-<h1> Reflection</h1>
+<h3> Reflection</h3>
 <audio controls>
 <source src="https://archive.org/download/easter2sermon/easter2sermon.mp3"></audio>
-<p></p>
-        
+<p>When you have listened to this short sermon, you might like to consider its themes for yourself. <br>Here are some questions to get you started.</p>
+ <button id="openReflection" style="padding: 0.5em 1em; font-size: 1em; border-radius: 8px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+    Open Reflection Questions
+  </button>
+  
+  <!-- Modal -->
+  <div id="reflectionModal" style="display:none; position:fixed; z-index:100; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+    <div style="background:white; margin:10% auto; padding:2em; border-radius:8px; width:90%; max-width:500px; text-align:left;">
+      <h3>Reflection Questions</h3>
+      <ul style="list-style-type: none; padding: 0;">
+        <li> Where in my life do I long for peace?</li>
+        <li> What wounds do I carry — and what healing do I hope for?</li>
+       
+        <li> When has God met me where I was, not where I "should" have been?</li>
+        <li> How can I witness to the risen Christ this week — not with words, but with my life?</li>
+        <li> Which gift do I need today: peace, breath, or sending?</li>
+      </ul>
+      <button id="closeReflection" style="margin-top:1em; padding:0.5em 1em; background-color:#4CAF50; color:white; border:none; border-radius:8px; cursor:pointer;">
+        Close
+      </button>
+    </div>
+  </div>
+         
       </section>
 
       <section data-background-color="#A9F5F2" data-transition="none">
@@ -238,5 +259,26 @@ please get in touch:</p>
   <script>
     Reveal.initialize();
   </script>
+
+<script>
+  const openReflection = document.getElementById('openReflection');
+  const closeReflection = document.getElementById('closeReflection');
+  const reflectionModal = document.getElementById('reflectionModal');
+
+  openReflection.onclick = function() {
+    reflectionModal.style.display = "block";
+  }
+
+  closeReflection.onclick = function() {
+    reflectionModal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == reflectionModal) {
+      reflectionModal.style.display = "none";
+    }
+  }
+</script>
+
 </body>
 </html>
