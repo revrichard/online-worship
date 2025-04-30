@@ -34,32 +34,7 @@
     bottom: 20px !important; /* move arrows up if needed */
   }
 
- #reflectionModal .modal-content {
-    font-size: 1rem;
-    overflow-y: auto;
-    max-height: 90vh;
-  }
 
-  @media screen and (max-width: 768px) {
-    #reflectionModal .modal-content {
-      font-size: 0.9rem;
-      padding: 1em;
-      margin: 15% auto;
-      width: 95%;
-    }
-
-    #reflectionModal .modal-content h3 {
-      font-size: 1.2rem;
-    }
-
-    #reflectionModal .modal-content ul {
-      padding-left: 1em;
-    }
-
-    #reflectionModal button {
-      font-size: 1rem;
-    }
-  }
 
 
   </style>
@@ -264,20 +239,20 @@ please get in touch:</p>
     </div>
  <!-- Modal (placed after .slides, inside .reveal) -->
     <div id="reflectionModal" style="display:none; position:fixed; z-index:100; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
-  <div class="modal-content" style="background:white; margin:10% auto; padding:2em; border-radius:8px; width:90%; max-width:800px; text-align:left;">
-    <h3>Reflection Questions</h3>
-    <p>These are some suggestions to get you you started in your further thinking about the readings today. It isn't an exam, and no one is looking over your shoulder! But if you'd like to share your reflections, or have any other feedback, we'd love to hear from you.</p>
-    <ul style="list-style-type: none; padding: 0;">
-      <li>• Where in my life do I long for peace?</li>
-      <li>• What wounds do I carry — and what healing do I hope for?</li>
-      <li>• When has God met me where I was, not where I "should" have been?</li>
-      <li>• How can I witness to the risen Christ this week — not with words, but with my life?</li>
-    </ul>
-    <div><button id="closeReflection" style="margin-top:1em; padding:0.5em 1em; background-color:#4CAF50; color:white; border:none; border-radius:8px; cursor:pointer;">
-      Close
-    </button></div>
-  </div>
-</div>
+      <div style="background:white; margin:10% auto; padding:2em; border-radius:8px; width:90%; max-width:800px; text-align:left;">
+        <h3>Reflection Questions</h3>
+        <ul style="list-style-type: none; padding: 0;">
+          <li>~ Where in my life do I long for peace?</li>
+          <li>~ What wounds do I carry — and what healing do I hope for?</li>
+          <li>~ When has God met me where I was, not where I "should" have been?</li>
+          <li>~ How can I witness to the risen Christ this week — not with words, but with my life?</li>
+          
+        </ul>
+        <button id="closeReflection" style="margin-top:1em; padding:0.5em 1em; background-color:#4CAF50; color:white; border:none; border-radius:8px; cursor:pointer;">
+          Close
+        </button>
+      </div>
+    </div>
 
   </div> <!-- End of .reveal -->
 
