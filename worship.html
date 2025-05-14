@@ -78,6 +78,15 @@
       padding-left: 1em;
     }
 
+    #reflectionModal {
+       z-index: 9999;
+    }
+
+    #reflectionModal .modal-content {
+       max-height: 80vh;
+       overflow-y: auto;
+}
+
     #reflectionModal button {
       font-size: 1rem;
     }
@@ -307,6 +316,7 @@ please get in touch:</p>
 
   <!-- Modal control script -->
   <script>
+   document.addEventListener('DOMContentLoaded', function() {
     const openReflection = document.getElementById('openReflection');
     const closeReflection = document.getElementById('closeReflection');
     const reflectionModal = document.getElementById('reflectionModal');
@@ -324,6 +334,7 @@ please get in touch:</p>
         reflectionModal.style.display = "none";
       }
     }
+  });
   </script>
 
 </body>
