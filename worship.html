@@ -68,6 +68,8 @@
       padding: 1em;
       margin: 15% auto;
       width: 95%;
+      max-height: 80vh; /* REPEATED HERE FOR CERTAINTY ON SMALL SCREENS */
+      overflow-y: auto; /* AND HERE */
     }
 
     #reflectionModal .modal-content h3 {
@@ -321,6 +323,7 @@ please get in touch:</p>
     const closeReflection = document.getElementById('closeReflection');
     const reflectionModal = document.getElementById('reflectionModal');
 
+    if (openReflection && closeReflection && reflectionModal) { //  <-- ADD THIS CHECK
     openReflection.onclick = function() {
       reflectionModal.style.display = "block";
     }
@@ -333,6 +336,9 @@ please get in touch:</p>
       if (event.target == reflectionModal) {
         reflectionModal.style.display = "none";
       }
+    }
+} else {
+      console.error("One or more modal elements not found!");  // <-- ADD THIS FOR DEBUGGING
     }
   });
   </script>
