@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Weekly Worship Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/white.css" id="theme">
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .embed-wrapper {
+      padding: 1em;
+    }
+    .hanging-list {
+    list-style-type: none;
+    list-style: none;
+    padding-left: 1.5em;
+    margin: 1em 0;
+    font-size: 1.1rem; /* adjust this for modal text size */
+  }
+
+  .hanging-list li {
+    list-style-type: none;  
+    position: relative;
+    margin-bottom: 1em;
+    text-indent: 0;
+    padding-left: 1.2em;
+  }
+
+  .hanging-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #444;
+  }
+    
+    iframe {
+      width: 100%;
+      max-width: 960px;
+      height: 540px;
+      border: none;
+    }
+  .reveal .controls .navigate-left,
+  .reveal .controls .navigate-right,
+  .reveal .controls .navigate-up,
+  .reveal .controls .navigate-down {
+    border-color: #ffffff !important; /* arrow color */
+    border-width: 8px !important;      /* thickness */
+    width: 50px;
+    height: 50px;
+    opacity: 1 !important;
+  }
+
+  .reveal .controls {
+    bottom: 20px !important; /* move arrows up if needed */
+  }
+
+ #reflectionModal .modal-content {
+    font-size: 1.1rem; /* make modal text slightly larger */
+    line-height: 1.6;
+  }
+
+  @media screen and (max-width: 768px) {
+    #reflectionModal .modal-content {
+      font-size: 0.9rem;
+      padding: 1em;
+      margin: 15% auto;
+      width: 95%;
+      max-height: 80vh; /* REPEATED HERE FOR CERTAINTY ON SMALL SCREENS */
+      overflow-y: auto; /* AND HERE */
+    }
+
+    #reflectionModal .modal-content h3 {
+      font-size: 1.2rem;
+    }
+
+    #reflectionModal .modal-content ul {
+      padding-left: 1em;
+    }
+
+    #reflectionModal {
+       z-index: 9999;
+    }
+
+    #reflectionModal .modal-content {
+       max-height: 80vh;
+       overflow-y: auto;
+}
+
+    #reflectionModal button {
+      font-size: 1rem;
+    }
+  }
+
+
+  </style>
+</head>
+<body>
+
+<!-- Button to open the modal -->
+<button onclick="document.getElementById('helpModal').style.display='block'"
+  style="position: absolute; top: 10px; right: 10px; z-index: 9999;">❓ Help</button>
+
+<!-- The Modal -->
+<div id="helpModal" style="
+  display:none;
+  position:fixed;
+  z-index:10000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow:auto;
+  background-color:rgba(0,0,0,0.4);
+">
+  <div style="
+    background-color:#fff;
+    margin:10% auto;
+    padding:20px;
+    border:1px solid #888;
+    width:80%;
+    max-width:600px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    border-radius:8px;
+  ">
+    <span onclick="document.getElementById('helpModal').style.display='none'"
+      style="float:right; font-size:28px; font-weight:bold; cursor:pointer;">&times;</span>
+    <h2>Navigation Help</h2>
+    <p>Use keyboard arrow keys, swipe, or click on the arrows in the bottom right of the screen to move between slides.</p>
+    <p>Press <kbd>Esc</kbd> to see an overview.</p>
+    <p>Press <kbd>F</kbd> to go full screen
+    <p>
+  Press play 
+  <svg width="20" height="20" viewBox="0 0 100 100" style="vertical-align: middle;">
+    <circle cx="50" cy="50" r="48" fill="#444" />
+    <polygon points="40,30 70,50 40,70" fill="white"/>
+  </svg>
+  for audio or video content.
+</p>
+    <!-- Add more info as needed -->
+  </div>
+</div>
+
+
+
+
+
+  <div class="reveal">
+    <div class="slides">
+      <section data-background-image="hills.jpg">
+       
+<h3> Shropshire and Marches Methodist Circuit</h3>
+
+<h4 style=color:white>Online Worship 3rd May 2026</h4>
+ <p>Welcome</p>
+ <audio controls><source src="audio/e5welcome2026.mp3"></audio>
+ <p>Pre-service music</p>
+ <audio controls><source src="audio/bachjesujoy.mp3"></audio>       
+      </section>
+
+      <section data-background-color="#A9F5F2" data-transition="none">
+<h2><h2>Hymn StF 297 </h2>
+<p>Christ is alive! Let Christians sing<br>His cross stands empty to the sky</p>
+<audio controls><source src="audio/intro297.mp3"></audio>
+</section>
+
+<section data-transition="none">
+<video controls src="hymns/stf297.mp4"></video>
+
+</section>
+ 
+ <section data-background-color="#A9F5F2" data-transition="none">
+ <h3> Prayers & the Lord's Prayer</h3>
+ 
+ <audio controls>
+ <source src="audio/e5prayer2026.mp3"></audio>
+ </section>
+        
+<section data-background-color="#A9F5F2" data-transition="none">
+<h5> Reading: 1 Peter 2: 2-10 </h5>
+
+<blockquote>Come to him, a living stone, though rejected by mortals yet chosen and precious in God’s sight, and like living stones, let yourselves be built into a spiritual house, to be a holy priesthood, to offer spiritual sacrifices acceptable to God through Jesus Christ. </blockquote>
+  <audio controls>
+  <source src="audio/1peter2v2ff.mp3"></audio>      
+      </section>
+
+<section data-background-color="#A9F5F2" data-transition="none">
+<h2>Hymn StF 409</h2>
+<p>Let us build a house where love can dwell<br>And all can safely
+live</p>
+<audio controls><source src="audio/intro409.mp3"></audio>
+</section>
+
+
+<section data-transition="none">
+<video controls src="hymns/stf409.mp4"></video> 
+</section>
+
+
+
+<section data-background-color="#A9F5F2" data-transition="none">
+<h5> Reading: John 14: 1-14</h5>
+
+<blockquote>if I go and prepare a place for you, I will come again and will take you to myself, so that where I am, there you may be also. And you know the way to the place where I am going.</blockquote>
+<audio controls>
+<source src="audio/john14v1ff.mp3"></audio>
+</section>
+
+
+<section data-background-color="#A9F5F2" data-transition="none">
+        
+<h3> Reflection</h3>
+
+<video controls src="e5sermon2.mp4"></video>
+
+ 
+         
+      </section>
+
+
+<section data-background-color="#A9F5F2" data-transition="none">
+<h2>Hymn StF 677 </h2>
+<p>Christ is made the sure foundation</p>
+<audio controls><source src="audio/intro677.mp3"></audio>
+</section>
+
+
+<section data-transition="none">
+<video controls src="hymns/stf677.mp4"></video> 
+</section>
+
+
+
+      <section data-background-color="#A9F5F2" data-transition="none">
+        
+<h3> Prayers</h3>
+<p>We join together in prayer for the world, the church and all in need
+today</p>
+        <audio controls> <source src="audio/e5intercession2026.mp3"></audio>
+      </section>
+
+<section data-background-color="#A9F5F2" data-transition="none">
+<h3>Hymn: StF 660</h3>
+<p>Called by Christ to be disciples<br>
+Every day in every place</p>        
+<audio controls><source src="audio/intro660.mp3"></audio>
+</section>
+
+<section data-transition="none">
+<video controls src="hymns/stf660.mp4"></video>
+</section>
+
+
+
+
+<section data-background-color="#A9F5F2" data-transition="none">
+<h3>The Blessing</h3>
+
+<p>May the grace of our Lord Jesus Christ<br>the love of God<br>and the fellowship of the Holy Spirit<br>be with us all, evermore<br>Amen</p>
+ <audio controls><source src="audio/e5blessing.mp3"></audio>       
+      </section>
+
+<section data-background-color="#A9F5F2">
+
+<h3> Thank You for Joining Us</h3>
+
+<p>We hope that you have found this service meaningful.<br>
+A new service will be available weekly, normally updated on Saturday night/Sunday morning</p>
+
+
+<h5> We'd Love to Hear From You</h5>
+
+<p>If you have any thoughts, reflections, or prayer requests,  
+please get in touch:</p>
+ 
+<p>🌐 Website: <a href="https://www.shropshireandmarches.org.uk/">Shropshire and Marches Methodist Circuit</a> </p> 
+<p>📝 <a href="https://www.shropshireandmarches.org.uk/contact-us.html">[Click here to give feedback]</a></p>
+
+<p>Thank you, and may God bless you.</p>
+
+</section>      
+
+    </div>
+ <!-- Modal (placed after .slides, inside .reveal) -->
+    <div id="reflectionModal" style="display:none; position:fixed; z-index:100; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+  <div class="modal-content" style="background:white; margin:10% auto; padding:2em; border-radius:8px; width:90%; max-width:800px; text-align:left;">
+    <h3>Reflection Questions</h3>
+    <p>These are some suggestions to get you you started in your further thinking about the readings today. It isn't an exam, and no one is looking over your shoulder! But if you'd like to share your reflections, or have any other feedback, we'd love to hear from you.</p>
+    <ul class="hanging-list">
+      <li>In what areas of your life do you find it most difficult to discern the voice of the Shepherd? What "other voices" are particularly distracting or alluring? </li>
+      <li>What does it mean to you that God’s people are a “great multitude that no one could count, from every nation, tribe, people and language”? How might this vision shape your understanding of the Church today?  </li>
+      <li>What practical steps can you take this week to quiet the noise around you and more attentively listen for the Shepherd's voice?  </li>
+        </ul>
+    <div><button id="closeReflection" style="margin-top:1em; padding:0.5em 1em; background-color:#4CAF50; color:white; border:none; border-radius:8px; cursor:pointer;">
+      Close
+    </button></div>
+  </div>
+</div>
+
+  </div> <!-- End of .reveal -->
+
+  <!-- Reveal.js library -->
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+
+  <!-- Modal control script -->
+  <script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const openReflection = document.getElementById('openReflection');
+    const closeReflection = document.getElementById('closeReflection');
+    const reflectionModal = document.getElementById('reflectionModal');
+
+    if (openReflection && closeReflection && reflectionModal) { //  <-- ADD THIS CHECK
+    openReflection.onclick = function() {
+      reflectionModal.style.display = "block";
+    }
+
+    closeReflection.onclick = function() {
+      reflectionModal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == reflectionModal) {
+        reflectionModal.style.display = "none";
+      }
+    }
+} else {
+      console.error("One or more modal elements not found!");  // <-- ADD THIS FOR DEBUGGING
+    }
+  });
+  </script>
+
+</body>
+</html>
